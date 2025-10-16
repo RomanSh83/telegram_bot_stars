@@ -1,0 +1,25 @@
+default:
+  # Secrets
+  TELEGRAM_BOT_TOKEN: your_token
+  ADMINS:
+    - admin_1_id
+    - admin_2_id
+
+  # Base configs
+  ASYNCIO_LOOP: "asyncio"  # asyncio (for win) or uvloop (for linux)
+
+  # Adapters
+  REDIS_URL: "redis://localhost:6390"
+  REDIS_MAX_CONNECTIONS: 20
+  DATABASE_URL: "postgresql+asyncpg://telegram_bot_stars_user:telegram_bot_stars_password@127.0.0.1:5453/telegram_bot_stars_db"
+
+  # Application settings
+  CATEGORY_TITLE_MAX_LENGTH: 150
+  PRODUCT_NAME_MAX_LENGTH: 150
+
+dev:
+  # Dev Adapters
+  REDIS_URL: "redis://localhost:6390"
+  REDIS_MAX_CONNECTIONS: 20
+  DATABASE_URL: "postgresql+asyncpg://telegram_bot_stars_user:telegram_bot_stars_password@127.0.0.1:5453/telegram_bot_stars_db"
+
