@@ -34,7 +34,3 @@ async def main() -> None:
 def run_app() -> None:
     logging.basicConfig(level=logging.INFO, stream=sys.stdout)
     asyncio.run(main())
-
-
-if __name__ == "__main__":
-    run_app()

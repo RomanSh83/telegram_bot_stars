@@ -16,7 +16,7 @@ dependencies = [
 ]
 
 [project.scripts]
-telegram-bot-stars = "telegram_bot_stars:main"
+app = "telegram_bot_stars.runner:run"
 
 [build-system]
 requires = ["hatchling"]
